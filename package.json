@@ -4,12 +4,16 @@
   "description": "transform bnp demo site to a readable json",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GGYaX/casperbankin.git"
   },
+  "engines": {
+    "node": ">=8.2.1"
+  },
+  "engineStrict": true,
   "keywords": [
     "bankin",
     "bnp"
@@ -19,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/GGYaX/casperbankin/issues"
   },
-  "homepage": "https://github.com/GGYaX/casperbankin#readme"
+  "homepage": "https://github.com/GGYaX/casperbankin#readme",
+  "dependencies": {
+    "casperjs": "^1.1.4"
+  }
 }

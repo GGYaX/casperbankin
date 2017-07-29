@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="/usr/local/Cellar/maven@3.3/3.3.9/libexec/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+</project>

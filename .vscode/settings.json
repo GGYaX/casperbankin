@@ -1,0 +1,13 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "javascript.validate.enable":false,
+    "standard.autoFixOnSave":true,
+      "standard.options": {
+      "globals": ["describe", "it", "expect", "beforeAll"],
+      "ignore": [
+          "node_modules/**",
+          "__test__/resource/**"
+      ]
+  },
+  "editor.minimap.enabled": false
+}
