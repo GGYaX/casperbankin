@@ -54,13 +54,13 @@ casper
       this.click('#submitIdent')
     })
     .then(function () {
-        this.waitForResource('udc-vue-liste.html', function () {
+      this.waitForResource('udc-vue-liste.html', function () {
             // begin parsing json
-            this.log('beging parsing')
-        }, function () {
-            this.log('no account list', 'error')
-            takeScreenshot.call(this, 'error no account list')
-        }, 10000)
+        this.log('beging parsing')
+      }, function () {
+        this.log('no account list', 'error')
+        takeScreenshot.call(this, 'error no account list')
+      }, 10000)
     })
     // .then(function () {
     //     this.waitUntilVisible('section.liste-famille-compte > header.udc-ligne-titre', function () {
