@@ -1,3 +1,3 @@
 ## dependencies
 
-Node > 8.2, npm > 5, standard
+Node > 8.2, npm > 5
