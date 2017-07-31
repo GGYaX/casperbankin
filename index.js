@@ -9,6 +9,7 @@ var casper = require('casper').create({
         height: 1080
     }
 })
+var fs = require('fs')
 
 var stepCount = {}
 var resultJSON
@@ -128,6 +129,8 @@ casper
     .then(takeScreenshot)
 
 casper.run(function () {
-    console.log('account are: \n' + JSON.stringify(resultJSON, null, 2))
+    var outputString = JSON.stringify(resultJSON, null, 2);
+    fs.write('account-info.output.json', outputString, 'w')
+    casper.log('account are: \n' + outputString, 'info')
     this.exit()
 })
