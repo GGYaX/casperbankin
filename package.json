@@ -4,7 +4,6 @@
   "description": "transform bnp demo site to a readable json",
   "main": "index.js",
   "scripts": {
-    "test": "standard"
   },
   "repository": {
     "type": "git",
