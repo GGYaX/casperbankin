@@ -23,7 +23,7 @@ function clickPassword(password) {
     }
 }
 
-var takeScreenshot = function (suffix) {
+function takeScreenshot(suffix) {
     var title = this.getTitle()
     stepCount[title] = stepCount[title] || 0
     stepCount[title]++
@@ -41,14 +41,12 @@ casper
         // this.fillXPath('form[name="logincanalnet"]', {
         //     '//*[@id="client-nbr"]': '123'
         // }, false)
-
-        this.sendKeys('form[name="logincanalnet"] > #client-nbr', '123')
+        this.sendKeys('form[name="logincanalnet"] > #client-nbr', (casper.cli.get('login') || '123') + '')
     })
     .then(takeScreenshot)
     .then(function () {
-        var password = '123456'
         this.log('clicking password')
-        clickPassword.call(this, password)
+        clickPassword.call(this, (casper.cli.get('password') || '123456') + '')
     })
     .then(takeScreenshot)
     .then(function () {
