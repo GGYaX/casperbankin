@@ -98,7 +98,7 @@ casper
                   solde = parseMoney(soldeString)
                 }
                             // a venir
-                var aVenirElement = accountElement.querySelector('.a-venir')
+                var aVenirElement = accountElement.querySelector('.a-venir') || accountElement.querySelector('.en-cours')
                 var aVenirSolde
                 if (aVenirElement) {
                   var aVenirString = aVenirElement.textContent.trim().split(':')[1]
